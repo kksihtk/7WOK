@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7WOK | General</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/colorschemes/darkscheme.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <header>
+                <div class="burger" onclick="document.getElementById('menu').classList.toggle('active');">
+                    ☰
+                </div>
+                <nav id="menu" class="">
+                    <div class="cross" onclick="document.getElementById('menu').classList.toggle('active');">✖</div>
+                    <ul>
+                        <li><a href="#">General</a></li>
+                        <li><a href="./wonders.html">Wonders</a></li>
+                    </ul>
+                </nav>
+                <h1>7WOK</h1>
+            </header>
+        </div>
+
+        <div class="container">
+                <h1>7 Wonders Of Kazakhstan</h1>
+                <div class="gallery">
+                    <div class="gallery_viewport gallery_firstImage" id="gallery_viewport">
+                    </div>
+                    <div class="gallery_control">
+                        <a class="gallery_arrow" onclick="changeGalleryImageBack()">&#60;</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(1)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(2)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(3)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(4)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(5)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(6)">○</a>
+                        <a class="gallery_circle" onclick="changeGalleryImageByIndex(7)">○</a>
+                        <a class="gallery_arrow" onclick="changeGalleryImageNext()">&#62;</a>
+                    </div>
+                </div>
+        </div>
+
+        <div class="container">
+            <div class="first-paragraph paragraph">
+                <h2>Семь чудес Казахстана: уникальное наследие природы и истории</h2>
+                <p>
+                    Казахстан — страна с богатым культурным наследием и удивительными природными ландшафтами,
+                    которые привлекают путешественников со всего мира. От бескрайних степей до величественных
+                    гор, от древних городов до загадочных природных явлений — здесь каждый найдет для себя
+                    что-то удивительное. Разнообразие местных достопримечательностей отражает историю,
+                    традиции и величие этой земли.
+                </p>
+            </div>
+            <div class="second-paragraph paragraph">
+                <h2>Путешествие в сердце Евразии</h2>
+                <p>
+                    Туризм в Казахстане стремительно развивается, предлагая как комфортные маршруты для отдыха,
+                    так и экстремальные экспедиции для любителей приключений. Природные заповедники, исторические
+                    памятники и самобытная культура делают путешествие по этой стране незабываемым. Среди
+                    множества достопримечательностей особенно выделяются семь чудес Казахстана — уникальные
+                    места, покоряющие своей красотой и значимостью.
+                </p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="wonders_button">
+                <div class="button">
+                    <a href="./wonders.html">К чудесам!</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <footer>
+                <h4>&copy; 2025, All Rights Reserved</h4>
+                <h5>kksihtk, Turan College Almaty</h5>
+            </footer>
+        </div>
+    </div>
+    <script src="./scripts/gallery.js"></script>
+</body>
+</html>

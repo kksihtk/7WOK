@@ -1,0 +1,427 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+   background-color: rgb(255, 255, 255);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 1000px;
+    text-align: center;
+    background-color: white;
+}
+
+::selection {
+   background-color: black;
+   color: white;
+}
+
+/* Header */
+
+header {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between; 
+   align-items: center;
+
+   height: 100px;
+
+   /* background-color: aliceblue; debug color*/ 
+}
+
+/* Burger */
+
+.burger {
+   font-size: 30px;
+   cursor: pointer;
+   padding: 10px;
+   display: none; /* По умолчанию скрыто */
+}
+
+.cross {
+   display: none;
+   font-size: 38px;
+   width: 5 0px;
+   padding-bottom: 5px;
+   cursor: pointer;
+}
+
+/* Navigation */
+
+nav ul {
+   display: flex;
+   list-style: none;
+}
+
+li a {
+   padding: 10px 20px;
+   margin-right: 20px;
+
+   color: white;
+   background-color: black;
+   text-decoration: none;
+
+   border-radius: 8px;
+}
+
+li:hover {
+   transform: translateY(2px);
+   transition: .5s;
+}
+
+/* Gallery */
+
+.gallery {
+   height: 500px;
+   margin-top: 20px;
+
+   border-radius: 24px;
+
+   display: flex;
+   flex-direction: column;
+}
+
+.gallery_viewport {
+   height: 500px;
+
+   border-radius: 24px;
+
+   background-position: center;
+   background-size: cover;
+   transition: opacity 0.5s ease-in-out;
+}
+
+.gallery_opacity {
+   opacity: 0;
+}
+
+.gallery_firstImage {
+   background-image: url(../images/1.png);
+}
+
+.gallery_secondImage {
+   background-image: url(../images/2.png);
+}
+
+.gallery_thirdImage {
+   background-image: url(../images/3.png);
+}
+
+.gallery_fourthImage {
+   background-image: url(../images/4.png);
+}
+
+.gallery_fivethImage {
+   background-image: url(../images/5.png);
+}
+
+.gallery_sixthImage {
+   background-image: url(../images/6.png);
+}
+
+.gallery_seventhImage {
+   background-image: url(../images/7.png);
+}
+
+.gallery_control {
+   height: 100px;
+   width: 1000px;
+   margin-top: 400px;
+
+   background-color: rgba(255, 255, 255, 0.575);
+   border-radius: 0 0 24px 24px;
+
+   position: absolute;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.gallery_arrow {
+   font-size: 24px;
+   font-weight: 600;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+}
+
+.gallery_arrow:first-child {
+   margin-left: 250px;
+}
+
+.gallery_arrow:last-child {
+   margin-right: 250px;
+}
+
+.gallery_circle {
+   font-size: 30px;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+}
+
+/* Paragraphs */
+
+.paragraph {
+   text-align:justify;
+   text-indent: 30px;
+   font-size: 18px;
+   color: rgb(0, 0, 0);
+   background-color: rgb(255, 255, 255);
+   padding: 2%;
+   border-radius: 24PX;
+}
+
+.first-paragraph {
+   margin: 50px 0 0 0;
+}
+
+.second-paragraph {
+   margin: 50px 0 0 0;
+}
+
+.second-paragraph h2 {
+   text-align: start;
+}
+
+.wonders_button {
+   margin: 15px 0;
+}
+
+.wonders_button a {
+   padding: 15px;
+   background-color: black;
+   color: white;
+   text-decoration: none;
+   border-radius: 8px;
+   font-weight: 600;
+}
+
+.wonders {
+   display: flex;
+   flex-direction: column;
+}
+
+.wonder {
+   padding: 40px 0;
+   display: flex;
+}
+
+.wonder-img {
+   cursor: pointer;
+}
+
+.wonder-img img {
+   width: 100%;
+   border-radius: 24px;
+}
+
+.wonder-text {
+   padding: 2% 0 2% 2%;
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+   width: 2000px;
+}
+
+.wonder-text h3 {
+   font-size: 22px;
+}
+
+.wonder-text p {
+   font-size: 18px;
+}
+
+.wonder-text a {
+   font-size: 14px;
+   color: white;
+   text-decoration: none;
+   text-align: center;
+   margin-top: 10px;
+   border-radius: 8px;
+   background-color: black;
+   width: 100px;
+   padding: 10px;
+}
+
+footer {
+   padding: 50px;
+}
+
+footer h4 {
+   font-weight: 300;
+}
+
+footer h5 {
+   font-weight: 200;
+   color: gray;
+}
+
+.modal {
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+
+   background-color: rgba(0, 0, 0, 0.397);
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.modal img {
+   margin: 10% 0 0 0;
+   width: 60%;
+   height: fit-content;
+   cursor: pointer;
+   border-radius: 10px;
+}
+
+.modal img:hover {
+   transform: scale(1.1);
+   transition: .5s;
+}
+
+.displayNone {
+   display: none;
+}
+
+.wonder-page_image img {
+   width: 100%;
+   border-radius: 24px;
+}
+
+.wonder-page_text {
+   text-align: justify;
+   text-indent: 30px;
+
+   padding: 2%;
+}
+
+.wonder-page_text p {
+   font-size: 18px;
+   margin: 10px 0;
+}
+
+@media (max-width: 1040px) {
+   .container {
+      width: 95vw;
+      text-align: center;
+  }
+
+  .burger {
+   display: block; /* Показываем бургер */
+   cursor: pointer;
+   }
+
+   .cross {
+      display: block;
+   }
+
+   nav {
+      display: none;
+      flex-direction: column;
+      text-align: left;
+      position: absolute;
+      width: 100%;
+      height: 50px;
+  }
+
+  nav ul {
+   flex-direction: column;
+  }
+
+  nav ul li {
+   margin-top: 20px;
+  }
+
+  nav ul li a {
+   font-size: 24px;
+  }
+
+  nav.active {
+   display: flex; /* Показываем меню */
+   }
+
+  .gallery_control {
+   width: 95vw;
+  }
+
+  .gallery_arrow:first-child {
+   margin-left: 50px;
+  }
+
+  .gallery_arrow:last-child {
+   margin-right: 50px;
+  }
+
+  .paragraph {
+   background-color: white;
+   color: black;
+  }
+
+  .second-paragraph {
+   margin: 50px 0 0 0;
+  }
+
+  .first-paragraph {
+   margin: 50px 0 0 0;
+  }
+
+  .wonder {
+   flex-direction: column;
+  }
+
+  .wonder-img {
+   width: 100%;
+  }
+
+  .wonder-img img {
+   height: auto;
+   width: 100%;
+  }
+
+  .wonder-text {
+   width: 100%;
+  }
+
+  .wonder-text h3{
+   font-size: 24px;
+  }
+
+  .modal img {
+   width: 200%;
+   margin-top: 40vh;
+   overflow-x: scroll;
+  }
+}
+
+.gallery_animation {
+   animation-name: gallery_opacity;
+   animation-duration: 1s;
+   animation-timing-function: ease-in-out;
+   animation-delay: 0;
+   animation-iteration-count: 1;
+   animation-direction: alternate;
+}
+
+@keyframes gallery_opacity {
+   0% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+}

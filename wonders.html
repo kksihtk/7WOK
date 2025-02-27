@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7WOK | Wonders</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/colorschemes/darkscheme.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <header>
+                <div class="burger" onclick="document.getElementById('menu').classList.toggle('active');">
+                    ☰
+                </div>
+                <nav id="menu" class="">
+                    <div class="cross" onclick="document.getElementById('menu').classList.toggle('active');">✖</div>
+                    <ul>
+                        <li><a href="./index.html">General</a></li>
+                        <li><a href="#">Wonders</a></li>
+                    </ul>
+                </nav>
+                <h1>7WOK</h1>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="wonders">
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/1.png" alt="Wonder 1" onclick="openModalImage(1)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Мавзолей Ходжи Ахмеда Яссауи</h3>
+                        <p>величественный памятник средневековой архитектуры, построенный в XIV веке в Туркестане. Он является духовным центром Казахстана и объектом Всемирного наследия ЮНЕСКО.</p>
+                        <a href="./wonders/wonder_one.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/2.png" alt="Wonder 1" onclick="openModalImage(2)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Байтерек</h3>
+                        <p>современный символ Астаны, олицетворяющий древнюю легенду о мировом древе. С вершины башни открывается панорамный вид на столицу Казахстана.</p>
+                        <a href="./wonders/wonder_two.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/3.png" alt="Wonder 1" onclick="openModalImage(3)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Чарынский каньон</h3>
+                        <p>природное чудо, напоминающее Гранд-Каньон в миниатюре. Его скалистые образования, созданные ветром и водой, поражают своей красотой.</p>
+                        <a href="./wonders/wonder_three.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/4.png" alt="Wonder 1" onclick="openModalImage(4)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Озеро Бурабай</h3>
+                        <p>живописное место, окруженное горами и густыми лесами, часто называют «казахстанской Швейцарией». Оно славится чистым воздухом и завораживающими пейзажами.</p>
+                        <a href="./wonders/wonder_four.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/5.png" alt="Wonder 1" onclick="openModalImage(5)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Поющий бархан</h3>
+                        <p>песчаная дюна в национальном парке «Алтын-Эмель», издающая загадочные звуки при ветре. Это уникальное природное явление остается одной из главных загадок Казахстана.</p>
+                        <a href="./wonders/wonder_five.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/6.png" alt="Wonder 1" onclick="openModalImage(6)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Кольсайские озёра</h3>
+                        <p>три кристально чистых горных озера, расположенные среди живописных склонов Тянь-Шаня. Их называют «жемчужинами Северного Тянь-Шаня» за удивительную прозрачность воды.</p>
+                        <a href="./wonders/wonder_six.html">Подробнее</a>
+                    </div>
+                </div>
+                <div class="wonder">
+                    <div class="wonder-img">
+                        <img src="./images/7.png" alt="Wonder 1" onclick="openModalImage(7)">
+                    </div>
+                    <div class="wonder-text">
+                        <h3>Карагандинские катакомбы</h3>
+                        <p>это сеть заброшенных угольных шахт и тоннелей, скрытых под городом. Они опасны из-за обрушений, нехватки кислорода и затоплений, но привлекают исследователей и любителей острых ощущений.</p>
+                        <a href="./wonders/wonder_seven.html">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer>
+                <h4>&copy; 2025, All Rights Reserved</h4>
+                <h5>kksihtk, Turan College Almaty</h5>
+            </footer>
+        </div>
+
+    </div>
+    <div class="modal displayNone" id="modal" onclick="closeModalImage()">
+        <img src="./images/1.png" alt="modalImage" id="modalImg">
+    </div>
+    <script src="./scripts/modal.js"></script>
+</body>
+</html>
